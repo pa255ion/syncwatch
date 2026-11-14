@@ -1,0 +1,7 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/
+libmpv-2.dll
+mpv-2.dll

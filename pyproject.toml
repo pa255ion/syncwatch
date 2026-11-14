@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syncwatch"
+version = "0.1.0"
+description = "Watch YouTube (or any yt-dlp source) in sync with friends, peer to peer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6>=6.5",
+    "python-mpv>=1.0",
+    "yt-dlp",
+]
+
+[project.gui-scripts]
+syncwatch = "syncwatch.__main__:main"
+
+[tool.setuptools]
+packages = ["syncwatch"]
